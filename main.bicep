@@ -10,7 +10,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
   }
 }
 
-// Define the Web App
+// Define the Web Application
 resource webApp 'Microsoft.Web/sites@2022-03-01' = {
   name: 'myWebApp${uniqueString(resourceGroup().id)}'
   location: resourceGroup().location
